@@ -1,9 +1,9 @@
-enum MusicEnum {
+enum MusicGenre {
       CLASSICALMUSIC(new ClassicalMusic()),
       POPMUSIC(new PopMusic());
 
       private Music music;
-      MusicEnum(Music music){
+      MusicGenre(Music music){
             this.music = music;
       }
 

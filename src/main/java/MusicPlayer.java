@@ -2,9 +2,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MusicPlayer {
-
-    public void playMusic(MusicEnum musicEnum) {
+    int num;
+    String[] songs;
+    public void playMusic(MusicGenre musicGenre) {
         System.out.println("\n" + this.toString());
-        System.out.printf("Playing: %s\n", musicEnum.getMusic().getSong()[(int)(Math.random()*3)]);
+        songs = musicGenre.getMusic().getSongs();
+        num = (int) (musicGenre.getMusic().getSongs().length * Math.random());
+        System.out.printf("Playing: %s\n", songs[num]);
     }
 }
