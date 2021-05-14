@@ -1,3 +1,7 @@
+/**
+ * @author Sergey Nesterov
+ */
+
 public interface Music{
-    String[] getSongs();
+    String getSong();
 }

@@ -2,12 +2,11 @@
  * @author Sergey Nesterov
  */
 
-public class PopMusic implements Music{
-    private String song = "One horse road";
+public class RockMusic implements Music{
+    private String song = "Thunderstruck";
 
     @Override
     public String getSong() {
         return song;
     }
 }
-
