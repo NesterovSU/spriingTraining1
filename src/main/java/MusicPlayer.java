@@ -6,7 +6,6 @@ import java.util.List;
  * @author Sergey Nesterov
  */
 
-@Component
 public class MusicPlayer {
     private int num;
     private String song;
